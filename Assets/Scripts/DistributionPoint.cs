@@ -34,4 +34,9 @@ public class DistributionPoint : MonoBehaviour
     {
         lineRenderer.enabled = false;
     }
+
+    public void GenerateNew()
+    {
+        GradientVector = new Vector3(Random.Range(-1f, 1f), 0, Random.Range(-1f, 1f)).normalized;
+    }
 }
