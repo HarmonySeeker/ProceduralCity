@@ -249,7 +249,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.19215688, g: 0.442934, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -289,13 +289,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1315965242
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1315965243
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315965242}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -404,11 +404,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileWidth: 7
+  scale: 20
+  BlockMod: 10
+  RoadWidth: 1
+  CenterCoeff: 3
   PointsNum: 100
   Plane: {fileID: 1315965242}
   AnglePoint: {fileID: 5105014720320865388, guid: fb43895003d91e449b1620375b98488c,
     type: 3}
+  RoadTile: {fileID: 3946572942922739766, guid: 73380461abf8d7f4387bd546be378827,
+    type: 3}
   Buildings:
+  - {fileID: 5105014720320865388, guid: e4da2685a7e0a4d4bb1fbe86bab71fa3, type: 3}
   - {fileID: 5105014720320865388, guid: 82c779fc01a68624183888457c6bb5a3, type: 3}
   - {fileID: 5105014720320865388, guid: 6507ca73c907a684f80a33af9527ee5f, type: 3}
   - {fileID: 5105014720320865388, guid: debf4cd5f2bf7174080b8fdcec6f6281, type: 3}
@@ -432,7 +439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2104026773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,13 +447,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104026772}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3beec695a28f99409cc37b2275d155f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   width: 256
   height: 256
+  scale: 20
 --- !u!64 &2104026774
 MeshCollider:
   m_ObjectHideFlags: 0
