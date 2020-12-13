@@ -259,8 +259,8 @@ public class LandscapeGen : MonoBehaviour
                     //if ((xCoeff < 0f && zCoeff >= 0f) || (xCoeff >= 0f && zCoeff < 0f))
                     //    xCoeff *= -1f;
 
-                    if (xCoeff < 0f || zCoeff < 0f)
-                        Debug.Log($"{i} {j} : {xCoeff}, {zCoeff}");
+                    //if (xCoeff < 0f || zCoeff < 0f)
+                    //    Debug.Log($"{i} {j} : {xCoeff}, {zCoeff}");
                     //Debug.Log(Mathf.Abs(i) / (pointsMat[pointsMat.Count - 1][0].transform.position.x - pointsMat[0][0].transform.position.x));
 
                     //tempNum += xCoeff * zCoeff * Random.Range(0, temp);
